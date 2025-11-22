@@ -1,0 +1,27 @@
+.title {
+  font-weight: 500;
+  font-size: 27px;
+  line-height: 32px;
+  padding-bottom: 10px;
+
+  @media screen and (min-width: $tablet) {
+    font-weight: 900;
+    font-size: 48px;
+    line-height: 56px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    font-weight: 900;
+    font-size: 48px;
+    line-height: 56px;
+  }
+}
+
+.input_h{
+  width: 100%;
+  text-align: left;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 18px;
+  padding-bottom: 10px;
+}

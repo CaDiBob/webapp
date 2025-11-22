@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+
+{% from "component/head/head.njk" import head as head %}
+
+{{ head() }}
+
+<body>
+
+<a target="_blank" style="display: none !important;"  href=""
+   class="button button--icon button--colored">
+    <i class="icon icon__stroke button__icon">{% include "assets/icon-lib/UI/plus.svg" %}</i>
+    <span>Смотреть инструкцию</span>
+</a>
+
+
+<div class="content">
+    <div class="test_wrapper">
+        <div class="link_wrapper" data-platform="other" data-protocol="vless">
+            <h2 class="title">VLESS</h2>
+            <button class="button button--icon button--colored js--modal js--copy" data-link-key = 'vless'>
+                <i class="icon button__icon">{% include "assets/icon-lib/key.svg" %}</i>
+                <span>Скопировать ключ</span>
+            </button>
+            <a target="_blank"  href=""
+               class="button button--icon button--colored" style="display: none !important;" data-platform="win">
+                <i class="icon button__icon">{% include "assets/icon-lib/faq.svg" %}</i>
+                <span>Смотреть инструкцию</span>
+            </a>
+        </div>
+
+        <div class="link_wrapper" data-platform="win" data-protocol="vless">
+            <h2 class="title">Karing (VLESS)</h2>
+            <a target="_blank"  href="https://github.com/KaringX/karing/releases/latest" class="button button--icon button--colored">
+                <i class="icon button__icon">{% include "assets/icon-lib/app/win.svg" %}</i>
+                <span>Установить приложение</span>
+            </a>
+            <button class="button button--icon button--colored js--copy" data-link-key = 'hiddify'>
+                <i class="icon button__icon">{% include "assets/icon-lib/key.svg" %}</i>
+                <span>Получить ключ</span>
+            </button>
+            <a target="_blank"  href="https://telegra.ph/Nastrojki-dlya-Windows-Protokol-VLESS-09-04-2"
+               class="button button--icon button--colored" style="displaynone !important; data-platform="win">
+                <i class="icon button__icon">{% include "assets/icon-lib/faq.svg" %}</i>
+                <span>Смотреть инструкцию</span>
+            </a>
+        </div>
+
+        <div class="link_wrapper" data-platform="android" data-protocol="vless">
+            <h2 class="title">V2rayTun (VLESS)</h2>
+            <a target="_blank"  href="https://play.google.com/store/apps/details?id=com.v2raytun.android&hl=ru"
+               class="button button--icon button--colored" data-platform="win">
+                <i class="icon button__icon">{% include "assets/icon-lib/app/playstore.svg" %}</i>
+                <span>Установить V2rayTun</span>
+            </a>
+            <a target="_blank"  href="https://github.com/DigneZzZ/v2raytun/releases/latest/download/v2RayTun_universal.apk"
+               class="button button--icon button--colored">
+                <span>Установить V2rayTun (APK)</span>
+            </a>
+            <button class="button button--icon button--colored js--modal js--set-key" data-link-key = 'v2raytun_android'>
+                <i class="icon button__icon">{% include "assets/icon-lib/key.svg" %}</i>
+                <span>Добавить ключ в V2rayTun</span>
+            </button>
+            <a target="_blank"  href=""
+               class="button button--icon button--colored" style="display: none !important;" data-platform="win">
+                <i class="icon button__icon">{% include "assets/icon-lib/faq.svg" %}</i>
+                <span>Смотреть инструкцию</span>
+            </a>
+        </div>
+
+        <div class="link_wrapper" data-platform="ios" data-protocol="vless">
+            <h2 class="title">V2rayTun (VLESS)</h2>
+            <a target="_blank"  href="https://apps.apple.com/ru/app/v2raytun/id6476628951" class="button button--icon button--colored">
+                <i class="icon button__icon">{% include "assets/icon-lib/app/appstore.svg" %}</i>
+                <span>Установить V2rayTun</span>
+            </a>
+            <button class="button button--icon button--colored js--modal js--set-key" data-link-key = 'v2raytun'>
+                <i class="icon button__icon">{% include "assets/icon-lib/key.svg" %}</i>
+                <span>Добавить ключ в V2rayTun</span>
+            </button>
+            <a target="_blank"  href=""
+               class="button button--icon button--colored" style="display: none !important;" data-platform="win">
+                <i class="icon button__icon">{% include "assets/icon-lib/faq.svg" %}</i>
+                <span>Смотреть инструкцию</span>
+            </a>
+        </div>
+
+        <div class="link_wrapper" data-platform="ios" data-protocol="vless">
+            <h2 class="title">FoxRay (VLESS для Mac)</h2>
+            <a target="_blank"  href="https://apps.apple.com/ru/app/foxray/id6448898396" class="button button--icon button--colored">
+                <i class="icon button__icon">{% include "assets/icon-lib/app/appstore.svg" %}</i>
+                <span>Установить FoxRay</span>
+            </a>
+            <button class="button button--icon button--colored js--modal js--set-key" data-link-key = 'foxray'>
+                <i class="icon button__icon">{% include "assets/icon-lib/key.svg" %}</i>
+                <span>Добавить ключ в FoxRay</span>
+            </button>
+            <a target="_blank"  href=""
+               class="button button--icon button--colored" style="display: none !important;" data-platform="win">
+                <i class="icon button__icon">{% include "assets/icon-lib/faq.svg" %}</i>
+                <span>Смотреть инструкцию</span>
+            </a>
+        </div>
+
+        <div class="link_wrapper" data-platform="ios" data-protocol="vless">
+            <h2 class="title">Streisand (VLESS)</h2>
+            <a target="_blank"  href="https://apps.apple.com/ru/app/streisand/id6450534064" class="button button--icon button--colored">
+                <i class="icon button__icon">{% include "assets/icon-lib/app/appstore.svg" %}</i>
+                <span>Установить Streisand</span>
+            </a>
+            <button class="button button--icon button--colored js--modal js--set-key" data-link-key = 'streisand'>
+                <i class="icon button__icon">{% include "assets/icon-lib/key.svg" %}</i>
+                <span>Добавить ключ в Streisand</span>
+            </button>
+            <a target="_blank"  href=""
+               class="button button--icon button--colored" style="display: none !important;" data-platform="win">
+                <i class="icon button__icon">{% include "assets/icon-lib/faq.svg" %}</i>
+                <span>Смотреть инструкцию</span>
+            </a>
+            <a target="_blank"  href="streisand://aW1wb3J0L3JvdXRlOi8vWW5Cc2FYTjBNRERWQVFJREJBVUdEQmdaR2xWeWRXeGxjMTFrYjIxaGFXNU5ZWFJqYUdWeVZHNWhiV1ZlWkc5dFlXbHVVM1J5WVhSbFozbFVkWFZwWktJSEVkTUlDUW9MREExYmIzVjBZbTkxYm1SVVlXZGRaRzl0WVdsdVRXRjBZMmhsY2xaa2IyMWhhVzVWY0hKdmVIbFdhSGxpY21sa293NFBFRjhRRVdkbGIzTnBkR1U2YVc1emRHRm5jbUZ0WHhBUFoyVnZjMmwwWlRwMGQybDBkR1Z5WHhBUVoyVnZjMmwwWlRwbVlXTmxZbTl2YTlNU0V4UVZEQmRTYVhCZFpHOXRZV2x1VFdGMFkyaGxjbHR2ZFhSaWIzVnVaRlJoWjZFV1dUQXVNQzR3TGpBdk1GWmthWEpsWTNSZkVCSldVRTVmYjI1c2FWOW1iM0pmU1VjbVJrSmNTVkJKWms1dmJrMWhkR05vWHhBa00wUkJOVVpEUlRZdE5FVXpNaTAwTkRRekxVSkVRamt0UWpNeU9EVkJOakpEUkRJMUFBZ0FFd0FaQUNjQUxBQTdBRUFBUXdCS0FGWUFaQUJyQUhFQWVBQjhBSkFBb2dDMUFMd0F2d0ROQU5rQTJ3RGxBT3dCQVFFT0FBQUFBQUFBQWdFQUFBQUFBQUFBR3dBQUFBQUFBQUFBQUFBQUFBQUFBVFU9"
+               class="button button--icon button--colored" data-platform="win">
+                <i class="icon button__icon">{% include "assets/icon-lib/rule.svg" %}</i>
+                <span>Добавить правило</span>
+            </a>
+        </div>
+
+        <div class="link_wrapper" data-platform="ios" data-protocol="ss">
+            <h2 class="title">Outline(SS)</h2>
+            <a target="_blank"  href="https://apps.apple.com/us/app/outline-app/id1356177741" class="button button--icon button--colored">
+                <i class="icon button__icon">{% include "assets/icon-lib/app/appstore.svg" %}</i>
+                <span>Установить Outline</span>
+            </a>
+            <button class="button button--icon button--colored js--modal js--set-key" data-link-key = 'ss'>
+                <i class="icon button__icon">{% include "assets/icon-lib/key.svg" %}</i>
+                <span>Добавить ключ в Outline</span>
+            </button>
+            <a target="_blank"  href=""
+               class="button button--icon button--colored" style="display: none !important;" data-platform="win">
+                <i class="icon button__icon">{% include "assets/icon-lib/faq.svg" %}</i>
+                <span>Смотреть инструкцию</span>
+            </a>
+        </div>
+
+        <div class="link_wrapper" data-platform="android" data-protocol="ss">
+            <h2 class="title">Outline(SS)</h2>
+            <a target="_blank"  href="https://play.google.com/store/apps/details?id=org.outline.android.client&hl=ru&gl=US"
+               class="button button--icon button--colored">
+                <i class="icon button__icon">{% include "assets/icon-lib/app/playstore.svg" %}</i>
+                <span>Установить Outline</span>
+            </a>
+            <a target="_blank"  href="https://s3.amazonaws.com/outline-releases/client/android/stable/Outline-Client.apk" class="button button--icon button--colored" data-platform="win">
+                <span>Установить Outline (APK)</span>
+            </a>
+            <button class="button button--icon button--colored js--modal js--set-key" data-link-key = 'ss'>
+                <i class="icon button__icon">{% include "assets/icon-lib/key.svg" %}</i>
+                <span>Добавить ключ в Outline</span>
+            </button>
+            <a target="_blank"  href=""
+               class="button button--icon button--colored" style="display: none !important;" data-platform="win">
+                <i class="icon button__icon">{% include "assets/icon-lib/faq.svg" %}</i>
+                <span>Смотреть инструкцию</span>
+            </a>
+        </div>
+
+        <div class="link_wrapper" data-platform="win" data-protocol="ss">
+            <h2 class="title">Outline(SS)</h2>
+            <a target="_blank"  href="https://getoutline.org/ru/get-started/#step-3" class="button button--icon button--colored">
+                <i class="icon button__icon">{% include "assets/icon-lib/app/win.svg" %}</i>
+                <span>Установить Outline</span>
+            </a>
+            <button class="button button--icon button--colored js--copy" data-link-key = 'ss'>
+                <i class="icon button__icon">{% include "assets/icon-lib/key.svg" %}</i>
+                <span>Скопировать ключ</span>
+            </button>
+            <a target="_blank"  href=""
+               class="button button--icon button--colored" style="display: none !important;" data-platform="win">
+                <i class="icon button__icon">{% include "assets/icon-lib/faq.svg" %}</i>
+                <span>Смотреть инструкцию</span>
+            </a>
+        </div>
+
+        <div class="link_wrapper" data-platform="other" data-protocol="ss">
+            <h2 class="title">Outline(SS)</h2>
+            <button class="button button--icon button--colored js--copy" data-link-key = 'ss'>
+                <i class="icon button__icon">{% include "assets/icon-lib/key.svg" %}</i>
+                <span>Скопировать ключ</span>
+            </button>
+            <a target="_blank"  href=""
+               class="button button--icon button--colored" style="display: none !important;" data-platform="win">
+                <i class="icon button__icon">{% include "assets/icon-lib/faq.svg" %}</i>
+                <span>Смотреть инструкцию</span>
+            </a>
+        </div>
+
+        <div class="link_wrapper link_wrapper--middle js--protocol" data-platform="all" data-protocol="all">
+            <div class="button_check">
+                <h4 class="button_check__h">Выберите протокол: </h4>
+                <div class="button_check__select">
+                    <input class="button_check__select__checkbox js--checkbox" type="checkbox" name="protocol">
+                    <h5 class="button_check__select__h" data-protocol="vless">VLESS</h5>
+                    <h5 class="button_check__select__h" data-protocol="ss">SS</h5>
+                    <div class="button_check__select__toggle"></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="link_wrapper" data-platform="ios" data-protocol="vless">
+            <button class="button button--icon button--grey js--copy" data-link-key = 'vless'>
+                <i class="icon button__icon">{% include "assets/icon-lib/key.svg" %}</i>
+                <span>Скопировать VLESS подписку</span>
+            </button>
+        </div>
+
+{#        <div class="link_wrapper" data-platform="win" data-protocol="vless">#}
+{#            <button class="button button--icon button--grey js--copy" data-link-key = 'vless'>#}
+{#                <i class="icon button__icon">{% include "assets/icon-lib/key.svg" %}</i>#}
+{#                <span>Скопировать VLESS подписку</span>#}
+{#            </button>#}
+{#        </div>#}
+
+        <div class="link_wrapper" data-platform="android" data-protocol="vless">
+            <button class="button button--icon button--grey js--copy" data-link-key = 'vless'>
+                <i class="icon button__icon">{% include "assets/icon-lib/key.svg" %}</i>
+                <span>Скопировать VLESS подписку</span>
+            </button>
+        </div>
+
+        <div class="link_wrapper" data-platform="android" data-protocol="ss">
+            <button class="button button--icon button--grey js--copy" data-link-key = 'ss'>
+                <i class="icon button__icon">{% include "assets/icon-lib/key.svg" %}</i>
+                <span>Скопировать SS ключ</span>
+            </button>
+        </div>
+
+        <div class="link_wrapper" data-platform="ios" data-protocol="ss">
+            <button class="button button--icon button--grey js--copy" data-link-key = 'ss'>
+                <i class="icon button__icon">{% include "assets/icon-lib/key.svg" %}</i>
+                <span>Скопировать SS ключ</span>
+            </button>
+        </div>
+
+        <div class="log js--log"></div>
+
+        {#        <a target="_blank"  href="" class="social_link">Связаться с нами</a> #}
+    </div>
+
+
+    <div class="modal js--modal_confirm">
+        <div class="modal__bg js--modal"></div>
+        <div class="modal__content">
+            <button class="modal__btn_close js--modal">
+                <i class="icon modal__btn_close__icon">{% include "assets/icon-lib/UI/close.svg" %}</i>
+            </button>
+            <h2 class="modal__h">Вы точно установили приложение?</h2>
+            <a target="_blank" class="button button--colored js--api-link">
+                <span>Да</span>
+            </a>
+            <a target="_blank" class="button button--icon button--colored js--app-link">
+                <span>Нет</span>
+            </a>
+        </div>
+    </div>
+    <div class="modal js--modal_copy">
+        <div class="modal__content">
+            <h2 class="modal__h">Ключ скопирован</h2>
+        </div>
+    </div>
+
+    <div class="modal js--modal_error">
+        <div class="modal__bg js--error_modal"></div>
+        <div class="modal__content">
+            <button class="modal__btn_close js--error_modal">
+                <i class="icon modal__btn_close__icon">{% include "assets/icon-lib/UI/close.svg" %}</i>
+            </button>
+            <h4 class="input_h">Ключ от приложения: </h4>
+            <input class="input" type="text">
+        </div>
+    </div>
+</div>
+
+</body>
+<script src="js/App.js"></script>
